@@ -37,7 +37,7 @@ Automated tests in dbt enforce data integrity before feeding the reporting layer
 
 ---
 
-## 📊 Power BI Integration
+## Power BI Integration
 
 The `GOLD` schema in Snowflake feeds Power BI using a star schema design:
 - `dim_customers` $\rightarrow$ `fct_sales` (via `customer_key`)
