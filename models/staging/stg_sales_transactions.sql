@@ -19,6 +19,13 @@ renamed_and_cleaned as (
         -- Product attributes
         "product_category"::varchar as product_category,
         
+        -- Currency code extraction based on raw symbol prior to sanitization
+        case 
+            when contains("price", '$') then 'USD'
+            when contains("price", '£') then 'GBP'
+            else 'EUR'
+        end as currency_code,
+
         -- Unit price sanitization (stripping $, €, £, commas, and whitespace)
         try_cast(
             regexp_replace("price", '[$,£,€, ]', '') 
@@ -61,6 +68,7 @@ select
     customer_email,
     customer_phone,
     product_category,
+    currency_code,
     unit_price,
     quantity,
     discount_pct,

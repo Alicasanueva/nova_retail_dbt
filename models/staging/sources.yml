@@ -27,3 +27,13 @@ sources:
 
       - name: RAW_FINANCE_TARGETS
         description: "Wide matrix containing monthly sales targets per region and product category"
+
+      - name: RAW_EXCHANGE_RATES
+        description: "Raw exchange rates table containing conversion multipliers to base currency EUR"
+        columns:
+          - name: RATE_DATE
+            description: "Effective date of exchange rate"
+          - name: CURRENCY_CODE
+            description: "ISO currency code (e.g. USD, GBP, EUR)"
+          - name: EXCHANGE_RATE_TO_EUR
+            description: "Multiplier to convert local currency into EUR base"
