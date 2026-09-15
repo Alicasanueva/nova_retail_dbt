@@ -1,0 +1,78 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Consolidated customer dimension table generated from sales transactions and web reviews."
+    columns:
+      - name: customer_key
+        description: "Surrogate key generated via MD5 hash of lowercased customer email."
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_email
+        description: "Primary email address of the customer."
+        tests:
+          - not_null
+
+  - name: dim_products
+    description: "Master product catalog dimension table containing categories and list prices."
+    columns:
+      - name: product_id
+        description: "Unique alphanumeric identifier for each product."
+        tests:
+          - unique
+          - not_null
+
+      - name: product_category
+        description: "Category classification for retail products."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Laptops', 'Monitors', 'Audio', 'Accessories']
+
+  - name: fct_sales
+    description: "Core transaction fact table detailing itemized sales, revenue, discounts, and return flags."
+    columns:
+      - name: order_id
+        description: "Primary key for each sales transaction line item."
+        tests:
+          - not_null
+
+      - name: customer_key
+        description: "Foreign key linking to dim_customers."
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_customers')
+                field: customer_key
+
+      - name: product_id
+        description: "Foreign key linking to dim_products."
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_products')
+                field: product_id
+
+      - name: net_amount
+        description: "Calculated net revenue for the transaction item."
+        tests:
+          - not_null
+
+  - name: fct_monthly_targets
+    description: "Financial performance target fact table unpivoted by region, category, and target month."
+    columns:
+      - name: target_key
+        description: "Surrogate key generated via MD5 hash of region, category, and month."
+        tests:
+          - unique
+          - not_null
+
+      - name: target_amount
+        description: "Financial revenue goal allocated for the specified month."
+        tests:
+          - not_null

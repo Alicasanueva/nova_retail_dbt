@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: NOVA_RETAIL_DB
+    schema: BRONZE
+    description: "Raw Nova Retail data ingested via KNIME — uncleaned tables with mixed formats and unparsed values"
+
+    tables:
+      - name: RAW_SALES_TRANSACTIONS
+        description: "Transactional log containing mixed currency formats, unparsed customer metadata strings, and varied date syntax"
+        columns:
+          - name: order_id
+            description: "Transaction identifier"
+          - name: customer_info
+            description: "Raw pipe-separated string containing Name | Email | Phone — split in staging"
+          - name: product_id
+            description: "Foreign key to product catalog"
+
+      - name: RAW_WEB_REVIEWS
+        description: "Customer feedback extracted from web sources containing unix epoch timestamps"
+        columns:
+          - name: review_id
+            description: "Primary key for customer product reviews"
+          - name: product_ref
+            description: "Foreign key to product catalog"
+
+      - name: RAW_FINANCE_TARGETS
+        description: "Wide matrix containing monthly sales targets per region and product category"
