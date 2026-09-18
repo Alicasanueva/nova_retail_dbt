@@ -1,0 +1,902 @@
+[
+  {
+    "review_id": "R-1001",
+    "product_ref": "P-02",
+    "user": {
+      "name": "Luis Gomez",
+      "email": "luisg@email.com",
+      "location": {
+        "country": "DE",
+        "city": "Berlin"
+      }
+    },
+    "timestamp": 1680195840000,
+    "rating": 5,
+    "review_text": "Setup was a nightmare, but works fine now."
+  },
+  {
+    "review_id": "R-1002",
+    "product_ref": "P-05",
+    "user": {
+      "name": "John Doe",
+      "email": "john@email.com",
+      "location": {
+        "country": "DE",
+        "city": "Berlin"
+      }
+    },
+    "timestamp": 1685312280,
+    "rating": 2,
+    "review_text": "Would buy again."
+  },
+  {
+    "review_id": "R-1003",
+    "product_ref": "P-05",
+    "user": {
+      "name": "Emily Clark",
+      "email": "emily.c@email.com",
+      "location": {
+        "country": "BR",
+        "city": "São Paulo"
+      }
+    },
+    "timestamp": 1681304820,
+    "rating": 3,
+    "review_text": "Exactly as described. Very happy."
+  },
+  {
+    "review_id": "R-1004",
+    "product_ref": "P-03",
+    "user": {
+      "name": "Mary Smith",
+      "email": "mary.s@email.com",
+      "location": {
+        "country": "US",
+        "city": "New York"
+      }
+    },
+    "timestamp": 1679823480,
+    "rating": 3,
+    "review_text": "Setup was a nightmare, but works fine now."
+  },
+  {
+    "review_id": "R-1005",
+    "product_ref": "P-02",
+    "user": {
+      "name": "Sophie Martin",
+      "email": "sophie.m@email.com",
+      "location": {
+        "country": "MX",
+        "city": "Mexico City"
+      }
+    },
+    "timestamp": 1686003900,
+    "rating": 4,
+    "review_text": "Setup was a nightmare, but works fine now."
+  },
+  {
+    "review_id": "R-1006",
+    "product_ref": "P-02",
+    "user": {
+      "name": "Emily Clark",
+      "email": "emily.c@email.com",
+      "location": {
+        "country": "US",
+        "city": "New York"
+      }
+    },
+    "timestamp": 1691709600,
+    "rating": 2,
+    "review_text": "Keyboard started sticking after 1 month."
+  },
+  {
+    "review_id": "R-1007",
+    "product_ref": "P-10",
+    "user": {
+      "name": "Emily Clark",
+      "email": "emily.c@email.com",
+      "location": {
+        "country": "US",
+        "city": "New York"
+      }
+    },
+    "timestamp": 1702283760000,
+    "rating": "null",
+    "review_text": "Setup was a nightmare, but works fine now."
+  },
+  {
+    "review_id": "R-1008",
+    "product_ref": "P-09",
+    "user": {
+      "name": "Sophie Martin",
+      "email": "sophie.m@email.com",
+      "location": {
+        "country": "FR",
+        "city": "Paris"
+      }
+    },
+    "timestamp": 1680546420,
+    "rating": 1,
+    "review_text": "Setup was a nightmare, but works fine now."
+  },
+  {
+    "review_id": "R-1009",
+    "product_ref": "P-06",
+    "user": {
+      "name": "Chen Wei",
+      "email": "chen.w@email.com",
+      "location": {
+        "country": "IT",
+        "city": "Milan"
+      }
+    },
+    "timestamp": 1686776760,
+    "rating": 4,
+    "review_text": "The sound quality blew me away."
+  },
+  {
+    "review_id": "R-1010",
+    "product_ref": "P-07",
+    "user": {
+      "name": "Marco Bianchi",
+      "email": "marco.b@email.com",
+      "location": {
+        "country": "US",
+        "city": "New York"
+      }
+    },
+    "timestamp": 1692584400000,
+    "rating": 4,
+    "review_text": "Exactly as described. Very happy."
+  },
+  {
+    "review_id": "R-1011",
+    "product_ref": "P-09",
+    "user": {
+      "name": "John Doe",
+      "email": "john@email.com",
+      "location": {
+        "country": "BR",
+        "city": "São Paulo"
+      }
+    },
+    "timestamp": 1696515960000,
+    "rating": 5,
+    "review_text": "Disappointed with the performance."
+  },
+  {
+    "review_id": "R-1012",
+    "product_ref": "P-08",
+    "user": {
+      "name": "Sophie Martin",
+      "email": "sophie.m@email.com",
+      "location": {
+        "country": "US",
+        "city": "New York"
+      }
+    },
+    "timestamp": 1681547700000,
+    "rating": 4,
+    "review_text": "Good quality but heavy."
+  },
+  {
+    "review_id": "R-1013",
+    "product_ref": "P-01",
+    "user": {
+      "name": "Emily Clark",
+      "email": "emily.c@email.com",
+      "location": {
+        "country": "DE",
+        "city": "Berlin"
+      }
+    },
+    "timestamp": 1703913540,
+    "rating": 1,
+    "review_text": "Battery life is amazing."
+  },
+  {
+    "review_id": "R-1014",
+    "product_ref": "P-02",
+    "user": {
+      "name": "Sophie Martin",
+      "email": "sophie.m@email.com",
+      "location": {
+        "country": "US",
+        "city": "San Francisco"
+      }
+    },
+    "timestamp": 1701145860,
+    "rating": 3,
+    "review_text": "Perfect size for my desk."
+  },
+  {
+    "review_id": "R-1015",
+    "product_ref": "P-08",
+    "user": {
+      "name": "Sophie Martin",
+      "email": "sophie.m@email.com",
+      "location": {
+        "country": "DE",
+        "city": "Berlin"
+      }
+    },
+    "timestamp": 1692724140,
+    "rating": 6,
+    "review_text": "Great value for the price."
+  },
+  {
+    "review_id": "R-1016",
+    "product_ref": "P-03",
+    "user": {
+      "name": "Mary Smith",
+      "email": "mary.s@email.com",
+      "location": {
+        "country": "FR",
+        "city": "Paris"
+      }
+    },
+    "timestamp": 1690887540,
+    "rating": 1,
+    "review_text": "The sound quality blew me away."
+  },
+  {
+    "review_id": "R-1017",
+    "product_ref": "P-05",
+    "user": {
+      "name": "Emily Clark",
+      "email": "emily.c@email.com",
+      "location": {
+        "country": "AU",
+        "city": "Sydney"
+      }
+    },
+    "timestamp": 1701705300000,
+    "rating": 3,
+    "review_text": "Cheap plastic feel, not recommended."
+  },
+  {
+    "review_id": "R-1018",
+    "product_ref": "P-09",
+    "user": {
+      "name": "Marco Bianchi",
+      "email": "marco.b@email.com",
+      "location": {
+        "country": "ES",
+        "city": "Barcelona"
+      }
+    },
+    "timestamp": 1692701700000,
+    "rating": 5,
+    "review_text": "Perfect size for my desk."
+  },
+  {
+    "review_id": "R-1019",
+    "product_ref": "P-04",
+    "user": {
+      "name": "Chen Wei",
+      "email": "chen.w@email.com",
+      "location": {
+        "country": "US",
+        "city": "New York"
+      }
+    },
+    "timestamp": 1686612600,
+    "rating": null,
+    "review_text": "Perfect size for my desk."
+  },
+  {
+    "review_id": "R-1020",
+    "product_ref": "P-03",
+    "user": {
+      "name": "Sophie Martin",
+      "email": "sophie.m@email.com",
+      "location": {
+        "country": "US",
+        "city": "New York"
+      }
+    },
+    "timestamp": 1678120620,
+    "rating": 4,
+    "review_text": "Good quality but heavy."
+  },
+  {
+    "review_id": "R-1021",
+    "product_ref": "P-09",
+    "user": {
+      "name": "Sophie Martin",
+      "email": "sophie.m@email.com",
+      "location": {
+        "country": "US",
+        "city": "New York"
+      }
+    },
+    "timestamp": 1678888500,
+    "rating": 4,
+    "review_text": "Disappointed with the performance."
+  },
+  {
+    "review_id": "R-1022",
+    "product_ref": "P-05",
+    "user": {
+      "name": "Fatima Al-Rashid",
+      "email": "fatima.a@email.com",
+      "location": {
+        "country": "AU",
+        "city": "Sydney"
+      }
+    },
+    "timestamp": 1703162460000,
+    "rating": 5,
+    "review_text": "Perfect size for my desk."
+  },
+  {
+    "review_id": "R-1023",
+    "product_ref": "P-06",
+    "user": {
+      "name": "Sophie Martin",
+      "email": "sophie.m@email.com",
+      "location": {
+        "country": "JP",
+        "city": "Tokyo"
+      }
+    },
+    "timestamp": 1674155040000,
+    "rating": 3,
+    "review_text": "Battery life is amazing."
+  },
+  {
+    "review_id": "R-1024",
+    "product_ref": "P-02",
+    "user": {
+      "name": "Chen Wei",
+      "email": "chen.w@email.com",
+      "location": {
+        "country": "US",
+        "city": "San Francisco"
+      }
+    },
+    "timestamp": 1700607300000,
+    "rating": 3,
+    "review_text": "Would buy again."
+  },
+  {
+    "review_id": "R-1025",
+    "product_ref": "P-01",
+    "user": {
+      "name": "John Doe",
+      "email": "john@email.com",
+      "location": {
+        "country": "IT",
+        "city": "Milan"
+      }
+    },
+    "timestamp": 1674984120,
+    "rating": 5,
+    "review_text": "Perfect size for my desk."
+  },
+  {
+    "review_id": "R-1026",
+    "product_ref": "P-10",
+    "user": {
+      "name": "Luis Gomez",
+      "email": "luisg@email.com",
+      "location": {
+        "country": "US",
+        "city": "Chicago"
+      }
+    },
+    "timestamp": 1680230340,
+    "rating": 2,
+    "review_text": "Setup was a nightmare, but works fine now."
+  },
+  {
+    "review_id": "R-1027",
+    "product_ref": "P-10",
+    "user": {
+      "name": "Luis Gomez",
+      "email": "luisg@email.com",
+      "location": {
+        "country": "DE",
+        "city": "Berlin"
+      }
+    },
+    "timestamp": 1692994560,
+    "rating": 4,
+    "review_text": "Would buy again."
+  },
+  {
+    "review_id": "R-1028",
+    "product_ref": "P-05",
+    "user": {
+      "name": "Marco Bianchi",
+      "email": "marco.b@email.com",
+      "location": {
+        "country": "US",
+        "city": "Chicago"
+      }
+    },
+    "timestamp": 1675779720,
+    "rating": 4,
+    "review_text": "Super lightweight and portable."
+  },
+  {
+    "review_id": "R-1029",
+    "product_ref": "P-05",
+    "user": {
+      "name": "Sophie Martin",
+      "email": "sophie.m@email.com",
+      "location": {
+        "country": "FR",
+        "city": "Paris"
+      }
+    },
+    "timestamp": 1681304040,
+    "rating": 5,
+    "review_text": "Cheap plastic feel, not recommended."
+  },
+  {
+    "review_id": "R-1030",
+    "product_ref": "P-10",
+    "user": {
+      "name": "Carlos Ruiz",
+      "email": "c.ruiz@email.com",
+      "location": {
+        "country": "MX",
+        "city": "Mexico City"
+      }
+    },
+    "timestamp": 1685580780,
+    "rating": 5,
+    "review_text": "Exactly as described. Very happy."
+  },
+  {
+    "review_id": "R-1031",
+    "product_ref": "P-01",
+    "user": {
+      "name": "Emily Clark",
+      "email": "emily.c@email.com",
+      "location": {
+        "country": "MX",
+        "city": "Mexico City"
+      }
+    },
+    "timestamp": 1694512140,
+    "rating": 3,
+    "review_text": "Battery life is amazing."
+  },
+  {
+    "review_id": "R-1032",
+    "product_ref": "P-04",
+    "user": {
+      "name": "Emily Clark",
+      "email": "emily.c@email.com",
+      "location": {
+        "country": "FR",
+        "city": "Paris"
+      }
+    },
+    "timestamp": 1702597740,
+    "rating": null,
+    "review_text": "Keyboard started sticking after 1 month."
+  },
+  {
+    "review_id": "R-1033",
+    "product_ref": "P-02",
+    "user": {
+      "name": "John Doe",
+      "email": "john@email.com",
+      "location": {
+        "country": "FR",
+        "city": "Paris"
+      }
+    },
+    "timestamp": 1691977020,
+    "rating": 3,
+    "review_text": "Cheap plastic feel, not recommended."
+  },
+  {
+    "review_id": "R-1034",
+    "product_ref": "P-07",
+    "user": {
+      "name": "Luis Gomez",
+      "email": "luisg@email.com",
+      "location": {
+        "country": "DE",
+        "city": "Berlin"
+      }
+    },
+    "timestamp": 1678384560,
+    "rating": 3,
+    "review_text": "Exactly as described. Very happy."
+  },
+  {
+    "review_id": "R-1035",
+    "product_ref": "P-03",
+    "user": {
+      "name": "Carlos Ruiz",
+      "email": "c.ruiz@email.com",
+      "location": {
+        "country": "UK",
+        "city": "London"
+      }
+    },
+    "timestamp": 1685663700,
+    "rating": 1,
+    "review_text": "Arrived broken, I am returning this."
+  },
+  {
+    "review_id": "R-1036",
+    "product_ref": "P-04",
+    "user": {
+      "name": "Chen Wei",
+      "email": "chen.w@email.com",
+      "location": {
+        "country": "JP",
+        "city": "Tokyo"
+      }
+    },
+    "timestamp": 1688698200,
+    "rating": 1,
+    "review_text": "Setup was a nightmare, but works fine now."
+  },
+  {
+    "review_id": "R-1037",
+    "product_ref": "P-06",
+    "user": {
+      "name": "Carlos Ruiz",
+      "email": "c.ruiz@email.com",
+      "location": {
+        "country": "AU",
+        "city": "Sydney"
+      }
+    },
+    "timestamp": 1689452580000,
+    "rating": 1,
+    "review_text": "Screen is crystal clear."
+  },
+  {
+    "review_id": "R-1038",
+    "product_ref": "P-09",
+    "user": {
+      "name": "Fatima Al-Rashid",
+      "email": "fatima.a@email.com",
+      "location": {
+        "country": "AU",
+        "city": "Sydney"
+      }
+    },
+    "timestamp": 1682366640,
+    "rating": 3,
+    "review_text": "Keyboard started sticking after 1 month."
+  },
+  {
+    "review_id": "R-1039",
+    "product_ref": "P-07",
+    "user": {
+      "name": "Mary Smith",
+      "email": "mary.s@email.com",
+      "location": {
+        "country": "US",
+        "city": "Chicago"
+      }
+    },
+    "timestamp": 1674523140,
+    "rating": 2,
+    "review_text": "Would buy again."
+  },
+  {
+    "review_id": "R-1040",
+    "product_ref": "P-09",
+    "user": {
+      "name": "Luis Gomez",
+      "email": "luisg@email.com",
+      "location": {
+        "country": "ES",
+        "city": "Barcelona"
+      }
+    },
+    "timestamp": 1692618120,
+    "rating": 5,
+    "review_text": "Perfect size for my desk."
+  },
+  {
+    "review_id": "R-1041",
+    "product_ref": "P-10",
+    "user": {
+      "name": "Luis Gomez",
+      "email": "luisg@email.com",
+      "location": {
+        "country": "ES",
+        "city": "Barcelona"
+      }
+    },
+    "timestamp": 1701489180,
+    "rating": 3,
+    "review_text": "Excellent product, very fast!"
+  },
+  {
+    "review_id": "R-1042",
+    "product_ref": "P-06",
+    "user": {
+      "name": "Anna Lee",
+      "email": "a.lee@email.com",
+      "location": {
+        "country": "UK",
+        "city": "London"
+      }
+    },
+    "timestamp": 1692172440,
+    "rating": "",
+    "review_text": "Cheap plastic feel, not recommended."
+  },
+  {
+    "review_id": "R-1043",
+    "product_ref": "P-09",
+    "user": {
+      "name": "Fatima Al-Rashid",
+      "email": "fatima.a@email.com",
+      "location": {
+        "country": "US",
+        "city": "New York"
+      }
+    },
+    "timestamp": 1690099920,
+    "rating": 6,
+    "review_text": "Exactly as described. Very happy."
+  },
+  {
+    "review_id": "R-1044",
+    "product_ref": "P-08",
+    "user": {
+      "name": "Mary Smith",
+      "email": "mary.s@email.com",
+      "location": {
+        "country": "BR",
+        "city": "São Paulo"
+      }
+    },
+    "timestamp": 1681936800,
+    "rating": 3,
+    "review_text": "Battery life is amazing."
+  },
+  {
+    "review_id": "R-1045",
+    "product_ref": "P-03",
+    "user": {
+      "name": "Emily Clark",
+      "email": "emily.c@email.com",
+      "location": {
+        "country": "DE",
+        "city": "Berlin"
+      }
+    },
+    "timestamp": 1675617180,
+    "rating": null,
+    "review_text": "Battery life is amazing."
+  },
+  {
+    "review_id": "R-1046",
+    "product_ref": "P-06",
+    "user": {
+      "name": "Luis Gomez",
+      "email": "luisg@email.com",
+      "location": {
+        "country": "AU",
+        "city": "Sydney"
+      }
+    },
+    "timestamp": 1672649640,
+    "rating": "",
+    "review_text": "Great value for the price."
+  },
+  {
+    "review_id": "R-1047",
+    "product_ref": "P-05",
+    "user": {
+      "name": "Luis Gomez",
+      "email": "luisg@email.com",
+      "location": {
+        "country": "US",
+        "city": "San Francisco"
+      }
+    },
+    "timestamp": 1701734880000,
+    "rating": "null",
+    "review_text": "Battery life is amazing."
+  },
+  {
+    "review_id": "R-1048",
+    "product_ref": "P-10",
+    "user": {
+      "name": "Fatima Al-Rashid",
+      "email": "fatima.a@email.com",
+      "location": {
+        "country": "US",
+        "city": "New York"
+      }
+    },
+    "timestamp": 1680249780000,
+    "rating": 1,
+    "review_text": "Super lightweight and portable."
+  },
+  {
+    "review_id": "R-1049",
+    "product_ref": "P-02",
+    "user": {
+      "name": "Sophie Martin",
+      "email": "sophie.m@email.com",
+      "location": {
+        "country": "UK",
+        "city": "London"
+      }
+    },
+    "timestamp": 1688575020000,
+    "rating": 5,
+    "review_text": "Excellent product, very fast!"
+  },
+  {
+    "review_id": "R-1050",
+    "product_ref": "P-09",
+    "user": {
+      "name": "Carlos Ruiz",
+      "email": "c.ruiz@email.com",
+      "location": {
+        "country": "UK",
+        "city": "London"
+      }
+    },
+    "timestamp": 1700956980,
+    "rating": null,
+    "review_text": "Perfect size for my desk."
+  },
+  {
+    "review_id": "R-1051",
+    "product_ref": "P-02",
+    "user": {
+      "name": "Sophie Martin",
+      "email": "sophie.m@email.com",
+      "location": {
+        "country": "MX",
+        "city": "Mexico City"
+      }
+    },
+    "timestamp": 1692154620000,
+    "rating": 1,
+    "review_text": "Arrived broken, I am returning this."
+  },
+  {
+    "review_id": "R-1052",
+    "product_ref": "P-05",
+    "user": {
+      "name": "Emily Clark",
+      "email": "emily.c@email.com",
+      "location": {
+        "country": "BR",
+        "city": "São Paulo"
+      }
+    },
+    "timestamp": 1698428700,
+    "rating": "",
+    "review_text": "Great value for the price."
+  },
+  {
+    "review_id": "R-1053",
+    "product_ref": "P-05",
+    "user": {
+      "name": "Sophie Martin",
+      "email": "sophie.m@email.com",
+      "location": {
+        "country": "JP",
+        "city": "Tokyo"
+      }
+    },
+    "timestamp": 1699275960,
+    "rating": 5,
+    "review_text": "Super lightweight and portable."
+  },
+  {
+    "review_id": "R-1054",
+    "product_ref": "P-04",
+    "user": {
+      "name": "Chen Wei",
+      "email": "chen.w@email.com",
+      "location": {
+        "country": "UK",
+        "city": "London"
+      }
+    },
+    "timestamp": 1682601660,
+    "rating": 1,
+    "review_text": "Cheap plastic feel, not recommended."
+  },
+  {
+    "review_id": "R-1055",
+    "product_ref": "P-07",
+    "user": {
+      "name": "Fatima Al-Rashid",
+      "email": "fatima.a@email.com",
+      "location": {
+        "country": "BR",
+        "city": "São Paulo"
+      }
+    },
+    "timestamp": 1683803340,
+    "rating": 1,
+    "review_text": "Exactly as described. Very happy."
+  },
+  {
+    "review_id": "R-1056",
+    "product_ref": "P-02",
+    "user": {
+      "name": "Mary Smith",
+      "email": "mary.s@email.com",
+      "location": {
+        "country": "ES",
+        "city": "Barcelona"
+      }
+    },
+    "timestamp": 1676850420,
+    "rating": 1,
+    "review_text": "Screen is crystal clear."
+  },
+  {
+    "review_id": "R-1057",
+    "product_ref": "P-09",
+    "user": {
+      "name": "Marco Bianchi",
+      "email": "marco.b@email.com",
+      "location": {
+        "country": "IT",
+        "city": "Milan"
+      }
+    },
+    "timestamp": 1702178760,
+    "rating": 4,
+    "review_text": "Exactly as described. Very happy."
+  },
+  {
+    "review_id": "R-1058",
+    "product_ref": "P-01",
+    "user": {
+      "name": "Carlos Ruiz",
+      "email": "c.ruiz@email.com",
+      "location": {
+        "country": "AU",
+        "city": "Sydney"
+      }
+    },
+    "timestamp": 1686308760,
+    "rating": 4,
+    "review_text": "Battery life is amazing."
+  },
+  {
+    "review_id": "R-1059",
+    "product_ref": "P-02",
+    "user": {
+      "name": "Fatima Al-Rashid",
+      "email": "fatima.a@email.com",
+      "location": {
+        "country": "JP",
+        "city": "Tokyo"
+      }
+    },
+    "timestamp": 1688788080000,
+    "rating": 4,
+    "review_text": "Exactly as described. Very happy."
+  },
+  {
+    "review_id": "R-1060",
+    "product_ref": "P-09",
+    "user": {
+      "name": "Emily Clark",
+      "email": "emily.c@email.com",
+      "location": {
+        "country": "AU",
+        "city": "Sydney"
+      }
+    },
+    "timestamp": 1702413300000,
+    "rating": 6,
+    "review_text": "Exactly as described. Very happy."
+  }
+]
