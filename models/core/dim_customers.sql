@@ -48,6 +48,29 @@ deduplicated_customers as (
     from all_customers
     group by 1, 2
 
+),
+
+final as (
+
+    select
+        customer_key,
+        customer_email,
+        customer_name,
+        customer_phone,
+        country_code,
+        city,
+        
+        -- Derived Region Mapping logic
+        case 
+            when upper(country_code) in ('US', 'USA', 'CA', 'CAN', 'MX', 'MEX') then 'NA'
+            when upper(country_code) in ('ES', 'ESP', 'DE', 'DEU', 'UK', 'GBR', 'FR', 'FRA', 'IT', 'ITA') then 'EMEA'
+            when upper(country_code) in ('JP', 'JPN', 'AU', 'AUS', 'CN', 'CHN', 'IN', 'IND') then 'APAC'
+            when upper(country_code) in ('BR', 'BRA', 'AR', 'ARG', 'CL', 'CHL', 'CO', 'COL') then 'LATAM'
+            else 'EMEA' -- Default fallback
+        end as region
+
+    from deduplicated_customers
+
 )
 
-select * from deduplicated_customers
+select * from final
