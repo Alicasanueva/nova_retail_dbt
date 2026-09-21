@@ -3,7 +3,7 @@
 An end-to-end, fully automated Data Platform built for **Nova Retail**. This solution ingests multi-currency raw transactional data, applies a **Medallion Architecture (Bronze → Silver → Gold)** on Snowflake using **dbt Cloud**, and serves synchronized executive metrics to **Power BI Service**.
 
 ## Tech Stack
-- **ETL / Ingestion:** KNIME Analytics Platform
+- **Data Ingestion & Load:** KNIME Analytics Platform
 - **Data Warehouse:** Snowflake 
 - **Transformation & Orchestration:** dbt Cloud 
 - **Version Control:** GitHub
