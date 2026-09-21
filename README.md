@@ -1,11 +1,11 @@
-# Nova Retail - Enterprise Data Platform (KNIME, dbt Cloud & Snowflake)
+# Nova Retail - Enterprise Data Platform (KNIME, dbt Cloud, Snowflake & Power BI)
 
 An end-to-end, fully automated Data Platform built for **Nova Retail**. This solution ingests multi-currency raw transactional data, applies a **Medallion Architecture (Bronze → Silver → Gold)** on Snowflake using **dbt Cloud**, and serves synchronized executive metrics to **Power BI Service**.
 
 ## Tech Stack
 - **ETL / Ingestion:** KNIME Analytics Platform
-- **Data Warehouse:** Snowflake (`DBT_WH`, `NOVA_RETAIL_DB`, `DBT_ROLE`)
-- **Transformation & Orchestration:** dbt Cloud (Production Environment)
+- **Data Warehouse:** Snowflake 
+- **Transformation & Orchestration:** dbt Cloud 
 - **Version Control:** GitHub
 - **Business Intelligence:** Power BI Desktop / Power BI Service
 
@@ -42,6 +42,7 @@ Automated data testing is enforced in dbt Cloud prior to serving data to Power B
 - **Generic Tests:** Strict checks for `not_null`, `unique`, and referential integrity (`relationships`).
 - **Singular Quality Audits:**
   - `assert_net_amount_matches_discount.sql`: Validates mathematical consistency of net revenue vs discounts applied.
+  - `assert_sales_categories_match_products.sql`: Ensures product categories in sales metrics match the master product catalog.
   - `assert_transaction_dates_are_valid.sql`: Guarantees transaction timestamps fall within valid business bounds.
 
 ---
