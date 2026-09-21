@@ -59,22 +59,27 @@ renamed_and_cleaned as (
 
     from source
 
+),
+
+with_fx as (
+
+    select
+        r.*,
+        coalesce(fx.exchange_rate_to_eur, 1.0000) as fx_rate,
+        
+        -- Return indicator flag
+        (r.quantity < 0) as is_returned,
+
+        -- Net amount in original currency
+        coalesce((r.unit_price * r.quantity * (1 - coalesce(r.discount_pct, 0))), 0)::numeric(10,2) as net_amount,
+
+        -- Net amount calculated in Base EUR
+        coalesce((r.unit_price * r.quantity * (1 - coalesce(r.discount_pct, 0))) * coalesce(fx.exchange_rate_to_eur, 1.0000), 0)::numeric(10,2) as net_amount_eur
+
+    from renamed_and_cleaned r
+    left join {{ ref('stg_exchange_rates') }} fx
+        on r.currency_code = fx.currency_code
+
 )
 
-select 
-    order_id,
-    product_id,
-    customer_name,
-    customer_email,
-    customer_phone,
-    product_category,
-    currency_code,
-    unit_price,
-    quantity,
-    discount_pct,
-    transaction_date,
-    -- Return indicator flag
-    (quantity < 0) as is_returned,
-    -- Calculated net revenue (negative quantities decrease overall revenue)
-    coalesce((unit_price * quantity * (1 - coalesce(discount_pct, 0))), 0)::numeric(10,2) as net_amount
-from renamed_and_cleaned
+select * from with_fx
